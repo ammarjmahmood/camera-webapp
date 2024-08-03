@@ -7,17 +7,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Upload an Image or Capture from Video</h1>
+  
+  <div id="camera-web-app-container">
+    <div id="video-container">
+      <video id="video" autoplay class="active"></video>
+      <img id="uploaded-image" alt="Uploaded Image">
+    </div>
 
-  <div id="video-container">
-    <video id="video" autoplay class="active"></video>
-    <img id="uploaded-image" alt="Uploaded Image">
-  </div>
-
-  <div class="controls">
-    <input type="file" id="upload-input" accept="image/*">
-    <button id="capture-btn">Capture Photo</button>
-    <button id="reset-btn">Reset</button>
+    <div class="controls">
+      <input type="file" id="upload-input" accept="image/*">
+      <button id="capture-btn">Capture Photo</button>
+      <button id="flip-btn">Flip Camera</button>
+      <button id="reset-btn">Reset</button>
+    </div>
   </div>
 
   <script src="app.js"></script>
